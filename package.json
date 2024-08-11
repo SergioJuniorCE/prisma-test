@@ -1,0 +1,19 @@
+{
+  "name": "app",
+  "version": "1.0.50",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "build": "bun build ./src/index.ts --outdir ./dist --target bun --sourcemap",
+    "start": "bun run dist/index.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.18.0",
+    "elysia": "latest",
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "prisma": "^5.18.0"
+  },
+  "module": "src/index.js"
+}
