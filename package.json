@@ -2,7 +2,7 @@
   "name": "app",
   "version": "1.0.50",
   "scripts": {
-    "setup": "bun i && prisma generate",
+    "setup": "bun i && bunx prisma generate",
     "dev": "bun run --watch src/index.ts",
     "build": "bun build ./src/index.ts --outdir ./dist --target bun --sourcemap",
     "start": "bun run dist/index.js"
