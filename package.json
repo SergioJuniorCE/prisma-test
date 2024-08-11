@@ -2,7 +2,7 @@
   "name": "app",
   "version": "1.0.50",
   "scripts": {
-    "setup": "bun i && bunx prisma generate",
+    "setup": "bun i && bun run src/install-openssl.ts",
     "dev": "bun run --watch src/index.ts",
     "build": "bun build ./src/index.ts --outdir ./dist --target bun --sourcemap",
     "start": "bun run dist/index.js"
